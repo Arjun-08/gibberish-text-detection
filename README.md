@@ -1094,44 +1094,7 @@ The pipeline performs:
 8. Metric comparison
 9. Report generation
 ```
-
 ---
-
-# 25. Streamlit Application
-
-The project also includes a Streamlit interface.
-
-Run:
-
-```bash
-streamlit run app.py
-```
-
-The application provides a simple interface for:
-
-- entering text
-- detecting text quality
-- viewing model predictions
-- comparing model outputs
-- examining benchmark results
-- testing the RAG quality-gate concept
-
-The intended user experience is:
-
-```text
-Enter extracted text
-        ↓
-Run detector
-        ↓
-View predicted quality
-        ↓
-View confidence / scores
-        ↓
-Decide whether ingestion should continue
-```
-
----
-
 # 26. Limitations and Next Stage
 
 The current benchmark is intentionally controlled and synthetic.
@@ -1226,30 +1189,7 @@ Pretrained Transformer
 madhurjindal/autonlp-Gibberish-Detector-492513457
 ```
 
----
 
-## Benchmark Summary
-
-```text
-Dataset
-10,000 samples
-4 balanced classes
-0 duplicate texts
-
-Split
-70% Train
-15% Validation
-15% Test
-
-Best V3 benchmark result
-Accuracy      : 86.80%
-Macro F1      : 86.72%
-MCC           : 0.826
-ROC-AUC       : 0.966
-PR-AUC        : 0.890
-
-Statistical model size
-~0.398 MB
 
 Statistical inference latency
 ~0.263 ms/sample
