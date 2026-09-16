@@ -1,0 +1,108 @@
+# ==============================
+# Python
+# ==============================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ==============================
+# Jupyter
+# ==============================
+
+.ipynb_checkpoints/
+
+# ==============================
+# IDE / Editors
+# ==============================
+
+.vscode/
+.idea/
+
+# ==============================
+# OS files
+# ==============================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Python tooling
+# ==============================
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==============================
+# Environment / Secrets
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Logs
+# ==============================
+
+*.log
+
+# ==============================
+# Generated files
+# ==============================
+
+*.tmp
+*.temp
+
+# ==============================
+# Model / ML artifacts
+# ==============================
+
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+# ==============================
+# Local experiment outputs
+# ==============================
+
+wandb/
+mlruns/
+runs/
+
+# ==============================
+# Generated benchmark data
+# Uncomment if you don't want
+# datasets tracked by Git
+# ==============================
+
+# data/benchmark/
+
+# ==============================
+# Generated plots / reports
+# Uncomment if generated locally
+# ==============================
+
+# results/
+# plots/
+
+# ==============================
+# System / temporary files
+# ==============================
+
+*.bak
+*.swp
+*.swo
