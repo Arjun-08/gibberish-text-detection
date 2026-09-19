@@ -993,37 +993,10 @@ This turns gibberish detection into part of a **self-healing ingestion pipeline*
 
 
 ---
-# 22. Limitations and Next Stage
+# 22. Limitations
 
-The current benchmark is intentionally controlled and synthetic.
+The current benchmark is based on controlled and synthetic corruption, which provides a useful foundation for evaluating the detector but does not fully represent the complexity of real-world document extraction.
 
-That makes it useful for understanding model behavior, but real document extraction introduces additional forms of corruption.
+Real PDF and OCR data can contain issues such as missing spaces, character substitutions, encoding errors, broken reading order, repeated headers and footers, table and equation extraction errors, and corrupted technical content.
 
-The next stage is therefore to construct a **real-world PDF/OCR benchmark** containing:
-
-```text
-clean PDF extraction
-OCR corruption
-missing spaces
-character substitutions
-encoding errors
-broken reading order
-repeated headers and footers
-table extraction errors
-equation corruption
-technical documents
-scientific documents
-code
-URLs
-identifiers
-```
-
-The objective is to test whether the detector can distinguish:
-
-```text
-Unusual but valid technical text
-              vs
-Actually corrupted text
-```
-
-This is especially important for RAG systems because legitimate scientific and technical text can naturally contain symbols, equations, abbreviations, identifiers, and unusual terminology.
+Future evaluation on real-world PDFs, including scientific and technical documents, will help assess how well the detector handles naturally occurring variations while distinguishing unusual but valid text from genuinely corrupted text. This will further improve the reliability and practical usefulness of the system for RAG pipelines.
